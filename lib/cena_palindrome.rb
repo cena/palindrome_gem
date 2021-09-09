@@ -1,8 +1,35 @@
-# frozen_string_literal: true
+require "cena_palindrome/version"
 
-require_relative "cena_palindrome/version"
+class String
 
-module CenaPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
+  # Returns true for a palindrome, false otherwise.
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  # Returns the letters in the string.
+=begin  
+ def letters
+    the_letters = []
+    letter_regex = /[a-z]/i
+    self.chars.each do |character|
+      if character.match(letter_regex)
+        the_letters << character
+      end
+    end
+    the_letters.join
+  end 
+=end
+
+  def letters
+    self.chars.select { |c| c.match(/[a-z]/i) }.join
+  end
+
+  private
+
+    # Returns content for palindrome testing.
+    def processed_content
+      self.scan(/[a-z]/i).join.downcase
+    end
 end
+  
