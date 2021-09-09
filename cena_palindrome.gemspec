@@ -8,16 +8,16 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Cena Mayo"]
   spec.email         = ["cenazoic@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Palindrome detector}
+  spec.description   = %q{Learn Enough Ruby palindrome detector}
+  spec.homepage      = "https://github.com/cena/cena_palindrome"
   spec.license       = "MIT"
-  spec.required_ruby_version = ">= 2.4.0"
+  spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'https://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/cena/cena_palindrome"
   spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
