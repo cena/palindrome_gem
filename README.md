@@ -19,7 +19,21 @@ Or install it yourself as:
 
 ## Usage
 
-> require 'cena_palindrome'
+`cena_palindrome` adds a `palindrome?` method to the `String` class, and can be used as follows:
+
+```
+$ irb
+>> require 'cena_palindrome'
+>> "honey badger".palindrome?
+=> false
+>> "deified".palindrome?
+=> true
+>> "Able was I, ere I saw Elba.".palindrome?
+=> true
+>> phrase = "Madam, I'm Adam."
+>> phrase.palindrome?
+=> true
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
